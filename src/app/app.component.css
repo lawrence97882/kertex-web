@@ -1,0 +1,12 @@
+html{
+    height: 120%;
+}
+body{
+    height: 100%;
+}
+.home{
+    background-color: aqua;
+}
+.header{
+    background-color: blue;
+}

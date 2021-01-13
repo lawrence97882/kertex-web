@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="d-flex">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+          <li ngbNavItem="top">
+            <a ngbNavLink>Agricultural products</a>
+            <ng-template ngbNavContent>
+              <hoticulture></hoticulture>    
+            </ng-template>
+          </li>
+          <li ngbNavItem="middle">
+            <a ngbNavLink>Horticulture</a>
+            <ng-template ngbNavContent>
+              <fruits></fruits>
+            </ng-template>
+          </li>
+          <li ngbNavItem="bottom">
+            <a ngbNavLink>Cereals and Tubers</a>
+            <ng-template ngbNavContent>
+              <cereals></cereals>
+            </ng-template>
+          </li>
+        </ul>
+      
+        <div [ngbNavOutlet]="nav" class="ml-4"></div>
+      </div>
+</div>
+

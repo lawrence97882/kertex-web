@@ -1,0 +1,36 @@
+<div>
+    <div class="d-flex">
+        <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-pills" orientation="vertical">
+          <li ngbNavItem="top">
+            <a ngbNavLink>Agricultural Inputs, <br> Equipments and Machinery </a>
+            <ng-template ngbNavContent>
+              <equipments></equipments>
+            </ng-template>
+          </li>
+          <li ngbNavItem="middle">
+            <a ngbNavLink>Motor Vehicles and spare parts</a>
+            <ng-template ngbNavContent>
+             <vehicles></vehicles>
+            </ng-template>
+          </li>
+          <li ngbNavItem="bottom">
+            <a ngbNavLink>Building Materials</a>
+            <ng-template ngbNavContent>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              <p>put pictures of the imported building materials consider a table or a 
+                label format of the pictures with a short description
+              </p>
+              <br>
+              <br>
+              <br>
+            </ng-template>
+          </li>
+        </ul>
+      
+        <div [ngbNavOutlet]="nav" class="ml-4"></div>
+      </div>
+</div>

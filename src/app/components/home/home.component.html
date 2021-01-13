@@ -1,0 +1,68 @@
+<div class="default">
+    <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+        <li [ngbNavItem]="1">
+          <a ngbNavLink>home</a>
+          <ng-template ngbNavContent>
+            <default></default>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="2">
+          <a ngbNavLink>Exports</a>
+          <ng-template ngbNavContent>
+            <export></export>
+          </ng-template>
+        </li>
+        <li [ngbNavItem]="3">
+          <a ngbNavLink>Imports</a>
+          <ng-template ngbNavContent>
+            <import></import>
+          </ng-template>
+        </li>
+        <!-- <li [ngbNavItem]="4">
+          <a ngbNavLink>Regulators</a>
+          <ng-template ngbNavContent>
+            <div>
+              <ul class="list-unstyled">
+                <li class="media">
+                  <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder7.jpg" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 font-weight-bold">
+                      <a href=""></a></h5>
+                    The board in Kenya incharge of tea
+                  </div>
+                </li>
+                <li class="media my-4">
+                  <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder6.jpg" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 font-weight-bold">
+                      <a href="https://horticulture.agricultureauthority.go.ke/">Horticultural Crop Directory (HCD)</a>
+                    </h5>
+                    The organ incharge of hoticulture
+                  </div>
+                </li>
+                <li class="media">
+                  <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder5.jpg" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 font-weight-bold">
+                      <a href="https://agricultureauthority.go.ke/index.php/en/">Agriculture Food Authority(AFA)</a> <br>
+                    </h5>
+                     The agricultural board
+                  </div>
+                </li>
+                <li class="media">
+                  <img class="d-flex mr-3" src="https://mdbootstrap.com/img/Photos/Others/placeholder5.jpg" alt="Generic placeholder image">
+                  <div class="media-body">
+                    <h5 class="mt-0 mb-1 font-weight-bold">
+                      <a href="https://agricultureauthority.go.ke/index.php/en/">Agriculture Food Authority(AFA)</a> <br>
+                    </h5>
+                     The agricultural board
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </ng-template>
+        </li> -->
+      </ul>
+      
+      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+</div>

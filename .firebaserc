@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "kertex-57f96": {
+      "hosting": {
+        "kertex": [
+          "kertex-57f96"
+        ]
+      }
+    },
+    "kerrtex-48e9b": {
+      "hosting": {
+        "kertex": [
+          "kerrtex-48e9b"
+        ]
+      }
+    }
+  }
+}
